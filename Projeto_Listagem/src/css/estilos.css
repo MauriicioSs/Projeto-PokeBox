@@ -1,0 +1,131 @@
+/* ESTILIZANDO O CORPO DA PÁGINA. */
+body{
+    /* DEFINIDO UMA FONTE PADRÃO OU UMA FONTE ALTERNATIVA. */
+    font-family: 'Poppins', sans-serif;
+    /* DEFININDO UM TAMANHO PARA A PÁGINA */
+    max-width: 1280px;  
+    margin: 0 auto;
+    /* DEFININDO A COR DE FUNDO DA PÁGINA. */
+    background-color: #5e5b5bad;
+    color: #333333; 
+}
+/* CRIANDO UM SEGUNDO BACKGROUND PARA A PAGINA. */
+body.modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+
+/* ESTILIZANDO O CABEÇALHO DA PÁGINA. */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+/* ESTILIZANDO O LOGO E O BOTÃO DA PÁGINA. */
+header .logo, header .Botao{
+    width: 40px;
+    transition: 0.2s ease-in-out;
+}
+/* RETIRANDO ALGUMAS CARACTERISTICAS INDESEJADAS DO ELEMENTO (BOTÃO) DA PÁGINA. */
+header #bt-alterar-backGround{
+    background: none;
+    border: none;    
+}
+/* ADICIONANDO ANIMAÇÃO DE DESTAQUE TANTO PARA O LOGO QUANDO PARA O BOTÃO DA PÁGINA. */
+header .logo:hover, header .Botao:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+
+/* ESTILIZANDO A ÁREA PRINCIPAL DA PÁGINA. */
+main{
+    padding: 25px;
+}
+/* ESTILIZANDO A LISTA DESORDENADA DA PÁGINA. */
+main .listagem_pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+/* ESTILIZANDO OS ITENS DE LISTA. */
+main .ct_pokemon{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+/* DEFININDO UMA COR PADRÃO PARA O ITEM DE LISTA (CARTÃO). */
+main .ct_pokemon:hover{
+    background-color: #96d9d6;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* DEFININDO A COR SECUNDARIA DO ITEM DE LISTA (CARTÃO). */
+.modo-escuro .ct_pokemon{
+    background-color: #a8a8a8;
+}
+/* ESTILIZANDO A ÁREA DO CARTÃO. */
+main .ct_pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+/* ESTILIZANDO A PARTE DE INFORMAÇÕES E DEFININDO TODAS AS LETRAS COMO MAIUSCULAS. */
+main .ct_pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+/* ESTILIZANDO O TAMANHO DA IMAGEM. */
+main .ct_pokemon .gif{
+    width: 90px;
+    height: 90px;
+
+}
+/* ESTILIZANDO A ÁREA DE TIPOS DO CARTÃO. */
+main .ct_pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+/* DEFININDO UM TAMANHO E ADICIONANDO BORDA A ÁREA DE TIPOS. */
+main .ct_pokemon .Tp{
+    padding: 8px;
+    border-radius: 10px;
+}
+/* DEFININDO UMA COR PARA O TIPO. */
+main .ct_pokemon .grama{
+    background-color: #7ac74c;
+}
+/* DEFININDO UMA COR PARA O TIPO. */
+main .ct_pokemon .veneno{
+    background-color: #df67ddfb;
+}
+/* DEFININDO UMA COR PARA O TIPO. */
+main .ct_pokemon .fogo{
+    background-color: #ee8130;
+}
+/* DEFININDO UMA COR PARA O TIPO. */
+main .ct_pokemon .agua{
+    background-color: #6390f0;    
+}
+/* DEFININDO UMA COR PARA O TIPO. */
+main .ct_pokemon .inseto{
+    background-color: #d4ec18;    
+}
+/* ESTILIZANDO A AREA DE DESCRIÇÃO DOS CATRTÕES. */
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
